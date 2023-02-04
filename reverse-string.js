@@ -9,4 +9,20 @@ function reverseString(str){
     return newString ;
 }
 let reverse = reverseString(str);
-console.log(reverse);
+// console.log(reverse);
+
+// checking vowel
+
+function isVowel(letter){
+    const vowel = [ "a", "e", "i", "o", "u"]
+    for (let i = 0; i < vowel.length; i++ ){
+        if (letter === vowel[i]){
+            return "VOWEL" ;
+        }else {
+            return "CONSONANT" ;
+        }
+    }
+}
+
+let result = isVowel("w")
+console.log(result);
